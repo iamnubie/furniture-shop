@@ -53,10 +53,10 @@ if(isset($_POST['confirm_payment'])){
             </div>
             <div class="form-outline my-4 text-center w-50 m-auto">
                 <select name="payment_mode" class="form-select w-50 m-auto">
-                    <option>Chọn Phương Thức Thanh Toán</option>
+                    <!-- <option>Chọn Phương Thức Thanh Toán</option>
                     <option>UPI</option>
                     <option>Ví điện tử</option>
-                    <option>Paypal</option>
+                    <option>Paypal</option> -->
                     <option>Tiền mặt</option>
                 </select>
             </div>

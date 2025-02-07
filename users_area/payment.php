@@ -21,6 +21,12 @@ include('../functions/common_function.php');
     display: block;
 }
 
+.payment_img2 {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
 /* .row{
         display: flex;
         justify-content: center;
@@ -43,18 +49,34 @@ include('../functions/common_function.php');
     ?>
     <div class="container">
         <h2 class="text-center text-info">Chọn hình thức thanh toán</h2>
-        <div class="row d-flex  justify-content-center align-items-center my-5">
-            <div class="col-md-6">
+        <div class="row d-flex justify-content-center align-items-center my-5">
+            <div class="col-md-4 text-center">
+                <h3 class="text-center">MoMo OTP</h3>
                 <a href="momo.php">
-                    <img src="../images/momo.jpg" alt="" class="payment_img"></a>
+                    <img src="../images/momo.jpg" alt="Momo Payment" class="payment_img">
+                </a>
+                <div class="momo_qr mt-4">
+                    <h3 class="text-center">MoMo QR</h3>
+                    <a href="momo_qr.php">
+                        <img src="../images/momo_qr.png" alt="Momo Payment" class="payment_img">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-6">
-                <a href="order.php?user_id=<?php echo $user_id ?>">
+            <div class="col-md-4 text-center">
+                <h3 class="text-center">VNPAY</h3>
+                <a href="vnpay.php">
+                    <img src="../images/vnpay.png" alt="Bank Payment" class="payment_img">
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="order.php?user_id=<?php echo $user_id ?>" class="d-block">
                     <h2 class="text-center">Trả khi nhận hàng</h2>
+                    <img src="../images/cod.png" alt="Cash on Delivery" class="payment_img2">
                 </a>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

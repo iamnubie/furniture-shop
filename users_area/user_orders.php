@@ -25,8 +25,8 @@ $user_id=$row_fetch['user_id'];
                 <th>Số lượng</th>
                 <th>Mã đơn hàng</th>
                 <th>Ngày</th>
-                <th>Hoàn thành/Chưa hoàn thành</th>
-                <th>Trạng thái</th>
+                <th>Trạng thái đơn hàng</th>
+                <th>Trạng thái thanh toán</th>
             </tr>
         </thead>
         <tbody class="bg-secondary text-light">
@@ -59,7 +59,7 @@ $user_id=$row_fetch['user_id'];
             ?>
             <?php
             if($order_status=='Hoàn thành'){
-                echo "<td>Đã Trả</td>";
+                echo "<td>Đã Xác Nhận</td>";
             }else{
                 echo "<td><a href='confirm_payment.php?order_id=$order_id' 
                 class='text-light'>Xác Nhận</a></td>
